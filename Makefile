@@ -1,4 +1,4 @@
-OBJS := bin/document.o bin/dump.o bin/helper.o bin/metadata.o bin/render.o bin/page-add.o bin/page-remove.o bin/internal.o bin/page-rotate.o bin/put-content.o bin/redo.o bin/rename-lexer.o bin/copy-helper.o bin/impose.o bin/export-images.o
+OBJS := bin/document.o bin/dump.o bin/helper.o bin/metadata.o bin/render.o bin/page-add.o bin/page-remove.o bin/internal.o bin/page-rotate.o bin/put-content.o bin/rename-lexer.o bin/copy-helper.o bin/impose.o bin/export-images.o
 CFLAGS := -g "-Imupdf/include"
 LFLAGS := -g
 LIBS := mupdf/build/debug/libmupdf.a mupdf/build/debug/libmujs.a mupdf/build/debug/libfreetype.a mupdf/build/debug/libjbig2dec.a mupdf/build/debug/libjpeg.a mupdf/build/debug/libopenjpeg.a mupdf/build/debug/libz.a -lm -lssl `pkg-config --cflags --libs gobject-2.0` `pkg-config --cflags --libs gtk+-3.0`
